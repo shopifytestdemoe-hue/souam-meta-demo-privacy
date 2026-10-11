@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Politique de confidentialité | SOUAM META DEMO</title>
-<meta name="description" content="Politique de confidentialité de SOUAM META DEMO, application de démonstration technique éditée par Willy De Madrid.">
+<meta name="description" content="Politique de confidentialité de SOUAM META DEMO, application de test pour une démonstration vidéo du SDK Meta, éditée par Willy De Madrid.">
 <meta name="robots" content="index, follow">
 <style>
   :root {
@@ -96,11 +96,11 @@
   <header>
     <p class="brand">SOUAM META DEMO</p>
     <h1>Politique de confidentialité</h1>
-    <p class="meta">Éditeur : Willy De Madrid · Dernière mise à jour : 10 octobre 2026</p>
+    <p class="meta">Éditeur : Willy De Madrid · Dernière mise à jour : 11 octobre 2026</p>
   </header>
 
   <div class="notice">
-    <p><strong>Important :</strong> SOUAM META DEMO intègre le kit de développement (SDK) de Meta afin de tester l’envoi d’événements d’utilisation (« App Events »). L’application envoie à Meta deux événements, <code>LessonCompleted</code> et <code>souam_demo_test</code>, sans paramètre décrivant votre activité. Les sections 5 et 6 décrivent ce qui peut être transmis à Meta.</p>
+    <p><strong>Important :</strong> SOUAM META DEMO est une application de test réalisée pour une vidéo YouTube de démonstration. Elle n’est pas distribuée : elle est utilisée <strong>uniquement par son éditeur</strong>, sur un émulateur Android, et ne collecte les données d’aucune autre personne. Elle intègre le SDK de Meta pour montrer l’envoi d’événements d’utilisation (« App Events ») : les sections 5 et 6 décrivent précisément ce qui est transmis à Meta.</p>
   </div>
 
   <nav aria-label="Sommaire">
@@ -109,7 +109,7 @@
       <li><a href="#presentation">Présentation</a></li>
       <li><a href="#statut">Nature et statut de l’application</a></li>
       <li><a href="#resume">En résumé</a></li>
-      <li><a href="#donnees-locales">Données enregistrées sur votre appareil</a></li>
+      <li><a href="#donnees-locales">Données enregistrées sur l’appareil</a></li>
       <li><a href="#transmission">Transmission de données</a></li>
       <li><a href="#sdk-meta">Utilisation du SDK Meta et des App Events</a></li>
       <li><a href="#finalites">Finalités</a></li>
@@ -126,7 +126,7 @@
 
   <section id="presentation">
     <h2>1. Présentation</h2>
-    <p>SOUAM META DEMO est une application de démonstration technique éditée par <strong>Willy De Madrid</strong>. Elle est issue de l’application d’apprentissage des langues SOUAM, dont elle reprend le fonctionnement, et sert à tester et à présenter l’intégration d’outils de mesure Meta.</p>
+    <p>SOUAM META DEMO est une application de démonstration technique éditée par <strong>Willy De Madrid</strong>. Elle est issue de l’application d’apprentissage des langues SOUAM, dont elle reprend le fonctionnement, et sert à tester et à présenter en vidéo l’intégration des outils de mesure Meta.</p>
     <p>Cette politique s’applique <strong>uniquement</strong> à SOUAM META DEMO. L’application SOUAM dispose de sa propre politique de confidentialité, distincte de celle-ci.</p>
   </section>
 
@@ -134,11 +134,11 @@
     <h2>2. Nature et statut de l’application</h2>
     <p>SOUAM META DEMO est une application expérimentale :</p>
     <ul>
-      <li>elle sert d’environnement de démonstration technique, notamment pour une vidéo consacrée à l’intégration du SDK Meta ;</li>
-      <li>elle est conservée après cette démonstration comme environnement personnel de sauvegarde et de test ;</li>
-      <li><strong>aucune distribution publique n’est prévue à ce jour</strong> : elle n’est pas proposée sur l’App Store ni sur Google Play.</li>
+      <li>elle sert d’environnement de démonstration pour une vidéo YouTube consacrée à l’intégration du SDK Meta ;</li>
+      <li>elle est utilisée <strong>uniquement par l’éditeur</strong>, sur un émulateur Android, avec des données de test : aucun autre utilisateur, aucun compte, aucune donnée de tiers ;</li>
+      <li><strong>aucune distribution publique n’est prévue</strong> : elle n’est proposée ni sur l’App Store ni sur Google Play ;</li>
+      <li>elle peut être conservée après la vidéo comme environnement personnel de test.</li>
     </ul>
-    <p>Ses fonctionnalités peuvent évoluer au fil des tests. Cette politique distingue ce qui est <strong>actuellement actif</strong> de ce qui est <strong>prévu mais pas encore actif</strong>.</p>
   </section>
 
   <section id="resume">
@@ -149,11 +149,13 @@
           <tr><th scope="col"></th><th scope="col">Situation</th></tr>
         </thead>
         <tbody>
-          <tr><td>Données enregistrées sur l’appareil</td><td>Oui (voir section 4)</td></tr>
+          <tr><td>Utilisateurs</td><td>L’éditeur seul, sur émulateur (démonstration vidéo)</td></tr>
           <tr><td>Compte, inscription, connexion</td><td>Non</td></tr>
-          <tr><td>SDK Meta</td><td><strong>Intégré</strong> à l’application de test</td></tr>
-          <tr><td>Événements envoyés à Meta</td><td><code>LessonCompleted</code> et <code>souam_demo_test</code>, <strong>activés</strong>, sans paramètre décrivant votre activité (voir section 6)</td></tr>
-          <tr><td>Enregistrement automatique d’événements par le SDK</td><td>Désactivé dans notre configuration</td></tr>
+          <tr><td>Données personnelles (nom, e-mail, téléphone, position, contacts, photos)</td><td>Non collectées</td></tr>
+          <tr><td>Serveur de l’éditeur</td><td>Aucun</td></tr>
+          <tr><td>SDK Meta</td><td><strong>Intégré</strong>, initialisé au démarrage de l’application</td></tr>
+          <tr><td>Événements automatiques du SDK (installation, ouverture, sessions)</td><td><strong>Activés</strong> (voir 6.2)</td></tr>
+          <tr><td>Événements envoyés par l’application</td><td><strong>Activés</strong>, liés à la progression dans les leçons (voir 6.3)</td></tr>
           <tr><td>Collecte de l’identifiant publicitaire par le SDK</td><td>Désactivée dans notre configuration</td></tr>
         </tbody>
       </table>
@@ -161,70 +163,85 @@
   </section>
 
   <section id="donnees-locales">
-    <h2>4. Données enregistrées sur votre appareil <span class="tag tag-active">ACTIF</span></h2>
-    <p>L’application ne demande ni nom, ni adresse e-mail, ni numéro de téléphone, et ne propose pas de compte utilisateur. Elle n’accède ni à votre position, ni à vos contacts, ni à vos photos, ni à votre caméra, ni à votre microphone.</p>
-    <p>Pour fonctionner, elle enregistre localement, dans l’espace de stockage réservé à l’application sur votre appareil :</p>
+    <h2>4. Données enregistrées sur l’appareil <span class="tag tag-active">ACTIF</span></h2>
+    <p>L’application ne demande ni nom, ni adresse e-mail, ni numéro de téléphone, et ne propose pas de compte utilisateur. Elle n’accède ni à la position, ni aux contacts, ni aux photos, ni à la caméra, ni au microphone.</p>
+    <p>Pour fonctionner, elle enregistre localement, dans l’espace de stockage réservé à l’application :</p>
     <ul>
-      <li><strong>vos préférences :</strong> langue de l’interface, langue étudiée, réglages des vibrations et des sons ;</li>
-      <li><strong>pour chaque langue étudiée :</strong> la date de démarrage, les motivations que vous sélectionnez (jusqu’à trois) et, si vous choisissez « Autre », le texte que vous saisissez librement. Ce texte est enregistré tel que vous l’écrivez : nous vous recommandons de ne pas y inscrire d’informations personnelles ;</li>
-      <li><strong>votre progression :</strong> leçons commencées et réussies, scores, nombre de tentatives, dates des sessions, points d’expérience et jours d’activité ;</li>
-      <li><strong>l’historique de vos sessions :</strong> réponses données, temps de réponse et résultats (les 300 dernières sessions), ainsi que des statistiques par mot ou expression étudiés ;</li>
-      <li><strong>un identifiant technique</strong> généré au hasard lors de l’installation, qui ne contient aucune information sur votre identité.</li>
+      <li><strong>les préférences :</strong> langue de l’interface, langue étudiée, réglages des vibrations et des sons ;</li>
+      <li><strong>pour chaque langue étudiée :</strong> la date de démarrage, les motivations sélectionnées (jusqu’à trois) et, si « Autre » est choisi, le texte saisi librement ;</li>
+      <li><strong>la progression :</strong> leçons commencées et réussies, scores, nombre de tentatives, dates des sessions, points d’expérience et jours d’activité ;</li>
+      <li><strong>l’historique des sessions :</strong> réponses données, temps de réponse et résultats (les 300 dernières sessions), ainsi que des statistiques par mot ou expression étudiés ;</li>
+      <li><strong>un identifiant technique</strong> généré au hasard lors de l’installation, qui ne contient aucune information d’identité.</li>
     </ul>
+    <p>Ces données restent sur l’appareil. Seuls les éléments listés à la section 6 sont transmis à Meta.</p>
   </section>
 
   <section id="transmission">
     <h2>5. Transmission de données</h2>
-    <p>SOUAM META DEMO ne dispose d’aucun serveur propre : l’éditeur ne reçoit pas vos données.</p>
-    <p>L’application intègre le SDK de Meta Platforms. Les transmissions de données d’utilisation prévues par l’éditeur sont celles à destination de Meta, décrites à la section 6. Les données enregistrées sur votre appareil (section 4) ne sont pas transmises en tant que telles.</p>
-    <p>D’autres acteurs techniques, comme l’éditeur du système d’exploitation de votre appareil ou les fournisseurs des outils utilisés pour faire fonctionner l’application, peuvent traiter certaines données selon leurs propres politiques, indépendamment de l’éditeur de SOUAM META DEMO.</p>
+    <p>SOUAM META DEMO ne dispose d’aucun serveur propre : l’éditeur ne reçoit aucune donnée.</p>
+    <p>La seule transmission prévue est celle à destination de Meta, via le SDK, décrite à la section 6. Les données enregistrées sur l’appareil (section 4) ne sont pas transmises en tant que telles.</p>
+    <p>D’autres acteurs techniques, comme l’éditeur du système d’exploitation ou les fournisseurs des outils utilisés pour faire fonctionner l’application, peuvent traiter certaines données selon leurs propres politiques, indépendamment de l’éditeur.</p>
   </section>
 
   <section id="sdk-meta">
-    <h2>6. Utilisation du SDK Meta et des App Events <span class="tag tag-active">INTÉGRÉ</span></h2>
+    <h2>6. Utilisation du SDK Meta et des App Events <span class="tag tag-active">ACTIF</span></h2>
 
     <h3>6.1 Configuration</h3>
     <ul>
-      <li>Enregistrement automatique des événements par le SDK (installation, lancement, etc.) : <strong>désactivé</strong>.</li>
-      <li>Initialisation complète automatique du SDK : <strong>désactivée</strong>. Le SDK n’est pleinement initialisé que lorsque l’application envoie l’un des événements décrits ci-dessous.</li>
+      <li>Initialisation automatique du SDK au démarrage de l’application : <strong>activée</strong>.</li>
+      <li>Enregistrement automatique des événements par le SDK : <strong>activé</strong>.</li>
       <li>Collecte de l’identifiant publicitaire de l’appareil par le SDK : <strong>désactivée</strong>.</li>
     </ul>
-    <p>Ces réglages relèvent de la configuration du SDK. Certaines fonctions techniques du SDK restent toutefois actives, comme décrit en 6.4.</p>
 
-    <h3>6.2 Événements envoyés <span class="tag tag-active">ACTIF</span></h3>
-    <p>L’application envoie les deux événements suivants :</p>
-    <ul>
-      <li><code>LessonCompleted</code> : envoyé lorsque vous terminez une leçon, il signale <strong>uniquement</strong> qu’une leçon a été terminée. Aucun score, aucune réponse, aucun identifiant de leçon ni aucune autre information sur votre activité n’est ajouté à cet événement.</li>
-      <li><code>souam_demo_test</code> : événement technique servant à vérifier le bon fonctionnement de l’intégration. Il est déclenché manuellement depuis un menu réservé au mode développement.</li>
-    </ul>
-    <p>Aucun autre événement n’est envoyé à Meta par l’application.</p>
+    <h3>6.2 Événements automatiques du SDK <span class="tag tag-active">ACTIF</span></h3>
+    <p>Le SDK peut enregistrer de lui-même des événements standards liés au cycle de vie de l’application, notamment l’installation, l’ouverture (activation) de l’application et la durée des sessions. Leur envoi effectif dépend aussi des réglages de l’application dans les outils de Meta. Aucun achat ni abonnement n’existe dans l’application : aucun événement de ce type n’est envoyé.</p>
 
-    <h3>6.3 Données susceptibles d’être traitées par Meta</h3>
-    <p>Lors de l’envoi d’événements, et plus généralement lors du fonctionnement du SDK, Meta peut recevoir et traiter des informations techniques. Selon la documentation publique de Meta, il peut s’agir notamment :</p>
+    <h3>6.3 Événements envoyés par l’application <span class="tag tag-active">ACTIF</span></h3>
+    <p>L’application envoie les événements suivants, déclenchés par l’utilisation normale de l’application :</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th scope="col">Événement</th><th scope="col">Moment</th><th scope="col">Paramètres</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>LanguageSelected</code></td><td>Choix d’une langue à étudier</td><td>code de la langue</td></tr>
+          <tr><td><code>OnboardingCompleted</code></td><td>Fin de l’accueil d’une langue</td><td>code de la langue, <strong>nombre</strong> de motivations choisies (jamais leur contenu)</td></tr>
+          <tr><td><code>ViewedContent</code> (standard)</td><td>Ouverture d’une leçon</td><td>type de contenu (« lesson »), identifiant de la leçon, code de la langue</td></tr>
+          <tr><td><code>LessonStarted</code></td><td>Début des exercices d’une leçon</td><td>identifiant de la leçon, code de la langue, niveau de difficulté</td></tr>
+          <tr><td><code>LessonCompleted</code></td><td>Fin d’une leçon</td><td>identifiant de la leçon, code de la langue, score en pourcentage, résultat (réussi ou non), niveau de difficulté</td></tr>
+          <tr><td><code>AchievedLevel</code> (standard)</td><td>Première réussite d’une leçon</td><td>rang de la leçon dans le parcours, identifiant de la leçon, code de la langue</td></tr>
+          <tr><td><code>UnlockedAchievement</code> (standard)</td><td>Premier score parfait sur une leçon</td><td>nom du succès (« perfect_lesson »), identifiant de la leçon, code de la langue</td></tr>
+          <tr><td><code>StreakExtended</code></td><td>Série de jours d’activité prolongée</td><td>nombre de jours de la série</td></tr>
+          <tr><td><code>souam_demo_test</code></td><td>Bouton de test du mode développement</td><td>aucun</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Les identifiants de leçon et codes de langue sont des références internes au contenu pédagogique (par exemple une leçon de vocabulaire), pas des informations sur une personne.</p>
+
+    <h3>6.4 Ce qui n’est jamais ajouté aux événements</h3>
+    <p>L’application n’ajoute pas aux événements les motivations elles-mêmes, le texte saisi dans « Autre », les réponses aux exercices, les temps de réponse, l’historique détaillé des sessions ni aucune information d’identité.</p>
+
+    <h3>6.5 Données techniques traitées par Meta</h3>
+    <p>Lors du fonctionnement du SDK, Meta peut recevoir et traiter des informations techniques. Selon la documentation publique de Meta, il peut s’agir notamment :</p>
     <ul>
-      <li>du nom des événements envoyés et des informations techniques que le SDK y associe automatiquement (par exemple un horodatage) ;</li>
-      <li>de caractéristiques de l’appareil : modèle, dimensions de l’écran, processeur, espace de stockage, versions du système d’exploitation, de l’application et du SDK, nom du paquet de l’application ;</li>
-      <li>d’informations réseau : opérateur ou fournisseur d’accès à Internet, langue, fuseau horaire et adresse IP ;</li>
+      <li>du nom et des paramètres des événements, avec les informations techniques que le SDK y associe (par exemple un horodatage) ;</li>
+      <li>de caractéristiques de l’appareil : modèle, dimensions de l’écran, processeur, espace de stockage, versions du système, de l’application et du SDK, nom du paquet de l’application ;</li>
+      <li>d’informations réseau : opérateur ou fournisseur d’accès, langue, fuseau horaire et adresse IP ;</li>
       <li>d’identifiants techniques utilisés par le SDK.</li>
     </ul>
+    <p>Dans le cadre de cette démonstration, ces informations concernent l’émulateur Android utilisé par l’éditeur.</p>
 
-    <h3>6.4 Fonctionnement technique du SDK</h3>
-    <ul>
-      <li>Le SDK est chargé au démarrage de l’application et peut y effectuer des opérations techniques préalables à son fonctionnement.</li>
-      <li>Sur Android, il déclare dans l’application des <strong>autorisations liées à la publicité</strong> : accès à l’identifiant publicitaire et autorisations de la « Privacy Sandbox » d’Android. Leur présence permet au SDK d’y accéder ; notre configuration désactive toutefois la collecte de l’identifiant publicitaire par le SDK.</li>
-    </ul>
-
-    <h3>6.5 Données pédagogiques</h3>
-    <p>L’application n’ajoute pas volontairement aux paramètres des événements vos motivations, le texte saisi dans « Autre », vos réponses aux exercices, vos scores, les identifiants des leçons ni le détail de votre progression enregistré sur l’appareil. Cela ne garantit pas l’absence de toute transmission technique par le SDK : les données décrites en 6.3 et 6.4 peuvent être traitées par Meta.</p>
+    <h3>6.6 Autorisations Android</h3>
+    <p>Sur Android, le SDK déclare dans l’application des <strong>autorisations liées à la publicité</strong> (identifiant publicitaire et « Privacy Sandbox » d’Android). Leur présence lui permet d’y accéder ; notre configuration désactive toutefois la collecte de l’identifiant publicitaire par le SDK.</p>
   </section>
 
   <section id="finalites">
     <h2>7. Finalités</h2>
     <ul>
       <li><strong>Données enregistrées sur l’appareil :</strong> uniquement le fonctionnement de l’application (afficher la progression, débloquer les leçons, calculer les scores et la série).</li>
-      <li><strong>Événements transmis à Meta :</strong> tester techniquement l’intégration du SDK Meta et en faire la démonstration, notamment vérifier la bonne réception des événements dans les outils de Meta, comme Events Manager.</li>
+      <li><strong>Événements transmis à Meta :</strong> tester l’intégration du SDK Meta et en faire la démonstration en vidéo, notamment vérifier la réception des événements dans les outils de Meta, comme Events Manager.</li>
     </ul>
-    <p>Aucune donnée n’est vendue par l’éditeur. Les données enregistrées sur l’appareil ne sont utilisées à aucune fin publicitaire.</p>
+    <p>Aucune donnée n’est vendue par l’éditeur. Aucune campagne publicitaire n’est associée à cette application de test.</p>
   </section>
 
   <section id="partage">
@@ -235,39 +252,38 @@
   <section id="conservation">
     <h2>9. Conservation</h2>
     <ul>
-      <li><strong>Données sur l’appareil :</strong> elles restent sur votre appareil tant que l’application y est installée. Elles sont effacées lorsque vous désinstallez l’application ou, sur Android, lorsque vous videz ses données.</li>
+      <li><strong>Données sur l’appareil :</strong> elles restent sur l’appareil tant que l’application y est installée, et sont effacées à la désinstallation ou, sur Android, lorsque ses données sont vidées.</li>
       <li><strong>Données reçues par Meta :</strong> leur durée de conservation relève de Meta, selon sa politique de confidentialité.</li>
     </ul>
   </section>
 
   <section id="securite">
     <h2>10. Sécurité</h2>
-    <p>Les données locales sont enregistrées dans l’espace de stockage propre à l’application sur votre appareil. L’éditeur n’en conserve aucune copie.</p>
+    <p>Les données locales sont enregistrées dans l’espace de stockage propre à l’application. L’éditeur n’en conserve aucune copie.</p>
   </section>
 
   <section id="consentement">
     <h2>11. Information et consentement</h2>
-    <p>L’application ne comporte pas de mécanisme de recueil du consentement. Elle n’est pas distribuée publiquement : elle est utilisée par l’éditeur et, le cas échéant, par des personnes informées de sa nature de test et de l’envoi d’événements à Meta. Avant toute utilisation plus large, cette politique sera mise à jour pour préciser les modalités d’information et de consentement applicables.</p>
+    <p>L’application ne comporte pas de mécanisme de recueil du consentement, car elle n’est utilisée que par son éditeur, pleinement informé de l’envoi d’événements à Meta. Si elle devait un jour être utilisée par d’autres personnes, cette politique serait mise à jour et un mécanisme d’information et de consentement serait ajouté au préalable.</p>
   </section>
 
   <section id="droits">
     <h2>12. Vos droits</h2>
-    <p>Selon la réglementation applicable en matière de protection des données personnelles, vous pouvez disposer de droits d’accès, de rectification, d’effacement, de limitation, d’opposition et de portabilité.</p>
-    <p>Les données enregistrées localement restent sous votre contrôle direct sur votre appareil. Pour toute question ou demande, contactez l’éditeur à l’adresse indiquée à la section 15. Vous pouvez également vous adresser à l’autorité de protection des données de votre pays de résidence.</p>
+    <p>Selon la réglementation applicable en matière de protection des données personnelles, vous pouvez disposer de droits d’accès, de rectification, d’effacement, de limitation, d’opposition et de portabilité. Pour toute question, contactez l’éditeur à l’adresse indiquée à la section 15. Vous pouvez également vous adresser à l’autorité de protection des données de votre pays de résidence.</p>
   </section>
 
   <section id="suppression">
     <h2>13. Suppression des données</h2>
     <ul>
-      <li><strong>Sur iPhone ou iPad :</strong> appuyez longuement sur l’icône SOUAM META DEMO, puis choisissez « Supprimer l’app ».</li>
-      <li><strong>Sur Android :</strong> ouvrez Paramètres &gt; Applications &gt; SOUAM META DEMO, puis choisissez « Stockage » &gt; « Effacer les données », ou « Désinstaller ». L’intitulé des menus peut varier selon le fabricant.</li>
-      <li><strong>Données transmises à Meta :</strong> vous pouvez écrire à <a href="mailto:contact@willydemadrid.com?subject=SOUAM%20META%20DEMO%20-%20Demande%20relative%20aux%20donn%C3%A9es">contact@willydemadrid.com</a> avec pour objet « SOUAM META DEMO - Demande relative aux données ». Les données détenues par Meta sont soumises à la politique et aux outils de Meta.</li>
+      <li><strong>Sur Android :</strong> Paramètres &gt; Applications &gt; SOUAM META DEMO, puis « Stockage » &gt; « Effacer les données », ou « Désinstaller ». L’intitulé des menus peut varier selon le fabricant.</li>
+      <li><strong>Sur iPhone ou iPad :</strong> appui long sur l’icône SOUAM META DEMO, puis « Supprimer l’app ».</li>
+      <li><strong>Données transmises à Meta :</strong> écrivez à <a href="mailto:contact@willydemadrid.com?subject=SOUAM%20META%20DEMO%20-%20Demande%20relative%20aux%20donn%C3%A9es">contact@willydemadrid.com</a> avec pour objet « SOUAM META DEMO - Demande relative aux données ». Les données détenues par Meta sont soumises à la politique et aux outils de Meta.</li>
     </ul>
   </section>
 
   <section id="modifications">
     <h2>14. Modifications de cette politique</h2>
-    <p>Cette politique sera mise à jour, avec une nouvelle date, <strong>avant</strong> toute modification des transmissions de données : ajout ou activation de tout autre événement, ajout d’un paramètre, activation de l’enregistrement automatique des événements ou activation de la collecte de l’identifiant publicitaire.</p>
+    <p>Cette politique sera mise à jour, avec une nouvelle date, <strong>avant</strong> toute modification des transmissions de données : ajout d’un événement ou d’un paramètre, activation de la collecte de l’identifiant publicitaire, ou ouverture de l’application à d’autres utilisateurs.</p>
   </section>
 
   <section id="contact">
@@ -277,7 +293,7 @@
   </section>
 
   <footer>
-    SOUAM META DEMO · Politique de confidentialité · Dernière mise à jour : 10 octobre 2026
+    SOUAM META DEMO · Politique de confidentialité · Dernière mise à jour : 11 octobre 2026
   </footer>
 </main>
 </body>
